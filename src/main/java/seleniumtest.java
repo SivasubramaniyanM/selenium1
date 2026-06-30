@@ -18,8 +18,8 @@ public class seleniumtest {
 
         WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
         WebElement ele=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span)[5]")));
-        String text = ele.getAttribute("textContent");
-        System.out.println(text);
+        String text1 = ele.getAttribute("textContent");
+        System.out.println(text1);
         driver.quit();
 
     }
