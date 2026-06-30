@@ -1,14 +1,16 @@
-import net.bytebuddy.pool.TypePool;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import java.util.*;
 
 import java.sql.Driver;
 import java.time.Duration;
 
 public class seleniumtest {
     public static void main(String args[]) {
+
         WebDriver driver = new ChromeDriver();
         driver.get("https://automationintesting.com/selenium/testpage/");
         driver.manage().window().maximize();
@@ -19,6 +21,7 @@ public class seleniumtest {
         String text = ele.getAttribute("textContent");
         System.out.println(text);
         driver.quit();
+
     }
 
 }
